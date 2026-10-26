@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 院名が決まったら、この下の title と description、ページ内の「〇〇接骨院」を書き換える -->
+  <title>〇〇接骨院</title>
+  <meta name="description" content="〇〇接骨院のホームページ。肩こり・腰痛・スポーツのけがなど、お気軽にご相談ください。ネット予約もできます。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    予約ボタンの行き先：予約サイトを公開したら、下の3か所の href を公開後の URL（末尾 /c/ページ名）に書き換える。
+    今はパソコン内で動かしている予約サイト（http://localhost:3000/c/sample）につながる。
+  -->
+
+  <!-- 一番上の大きな写真：images/hero.jpg を置くと自動で表示される（無ければ緑の背景） -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>〇〇接骨院</h1>
+      <p class="hero-lead">肩こり・腰痛・スポーツのけが、お気軽にご相談ください</p>
+      <a class="button" href="http://localhost:3000/c/sample">ネット予約はこちら</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>当院について</h2>
+      <p>
+        〇〇駅から徒歩〇分。地域の皆さまの「痛い」「つらい」に寄り添い、一人ひとりに合わせた施術を行います。<br>
+        初めての方も、どうぞお気軽にお越しください。
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>施術メニュー</h2>
+      <ul class="menu-list">
+        <li><span>保険施術</span><span class="muted">骨折・脱臼・打撲・ねんざ など</span></li>
+        <li><span>骨盤矯正</span><span class="muted">約30分</span></li>
+        <li><span>電気治療</span><span class="muted">約15分</span></li>
+        <li><span>鍼灸</span><span class="muted">約40分</span></li>
+      </ul>
+    </section>
+
+    <!-- 院内の写真：images/room1.jpg などを置き、下の img の src と説明（figcaption）を書き換える。枚数は増減してよい -->
+    <section class="card">
+      <h2>院内の様子</h2>
+      <ul class="gallery">
+        <li><figure><div class="photo-placeholder">写真準備中</div><figcaption>受付</figcaption></figure></li>
+        <li><figure><div class="photo-placeholder">写真準備中</div><figcaption>施術室</figcaption></figure></li>
+        <li><figure><div class="photo-placeholder">写真準備中</div><figcaption>待合室</figcaption></figure></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>診療時間</h2>
+      <table class="hours">
+        <thead>
+          <tr><th></th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>9:00〜12:30</th><td>●</td><td>●</td><td>●</td><td>●</td><td>●</td><td>●<sup>※</sup></td><td class="closed">休</td></tr>
+          <tr><th>15:00〜20:00</th><td>●</td><td>●</td><td>●</td><td>●</td><td>●</td><td class="closed">休</td><td class="closed">休</td></tr>
+        </tbody>
+      </table>
+      <p class="note">※土曜は 9:00〜14:00。日曜・祝日は休診です。臨時休診はネット予約のページでご確認ください。</p>
+    </section>
+
+    <section class="card">
+      <h2>アクセス・お問い合わせ</h2>
+      <dl class="info">
+        <div><dt>住所</dt><dd>〒000-0000 〇〇県〇〇市〇〇 1-2-3</dd></div>
+        <div><dt>電話</dt><dd><a href="tel:0000000000">00-0000-0000</a></dd></div>
+      </dl>
+      <!-- 住所が決まったら、下の q= のあとを住所に書き換えると地図が出る（今は表示しない） -->
+      <!-- <iframe class="map" title="地図" loading="lazy" src="https://www.google.com/maps?q=住所&output=embed"></iframe> -->
+    </section>
+
+    <a class="button button-wide" href="http://localhost:3000/c/sample">ネット予約はこちら</a>
+  </main>
+
+  <footer>
+    <p>© 〇〇接骨院</p>
+  </footer>
+</body>
+</html>
