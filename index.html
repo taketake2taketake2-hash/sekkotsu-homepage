@@ -10,8 +10,8 @@
 </head>
 <body>
   <!--
-    予約ボタンの行き先：予約サイトを公開したら、下の3か所の href を公開後の URL（末尾 /c/ページ名）に書き換える。
-    今はパソコン内で動かしている予約サイト（http://localhost:3000/c/sample）につながる。
+    予約ボタン（下の2か所）：予約サイトがまだネットに出ていないので、今は「準備中」の表示にしている。
+    予約サイトを公開したら、各「準備中」の行を消し、すぐ下のコメント内の a タグを戻して href を公開後の URL（末尾 /c/ページ名）にする。
   -->
 
   <!-- 一番上の大きな写真：images/hero.jpg を置くと自動で表示される（無ければ緑の背景） -->
@@ -19,7 +19,8 @@
     <div class="hero-inner">
       <h1>〇〇接骨院</h1>
       <p class="hero-lead">肩こり・腰痛・スポーツのけが、お気軽にご相談ください</p>
-      <a class="button" href="http://localhost:3000/c/sample">ネット予約はこちら</a>
+      <span class="button button-off">ネット予約は準備中です</span>
+      <!-- <a class="button" href="http://localhost:3000/c/sample">ネット予約はこちら</a> -->
     </div>
   </header>
 
@@ -76,7 +77,8 @@
       <!-- <iframe class="map" title="地図" loading="lazy" src="https://www.google.com/maps?q=住所&output=embed"></iframe> -->
     </section>
 
-    <a class="button button-wide" href="http://localhost:3000/c/sample">ネット予約はこちら</a>
+    <span class="button button-wide button-off">ネット予約は準備中です</span>
+    <!-- <a class="button button-wide" href="http://localhost:3000/c/sample">ネット予約はこちら</a> -->
   </main>
 
   <footer>

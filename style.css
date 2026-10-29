@@ -68,6 +68,7 @@ main {
 }
 .button:hover { background: #d97706; }
 .button-wide { display: block; text-align: center; }
+.button-off, .button-off:hover { background: #94a3b8; cursor: default; }
 
 .muted { color: var(--muted); font-size: 0.9rem; }
 
